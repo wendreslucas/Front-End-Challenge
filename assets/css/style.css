@@ -57,6 +57,14 @@ body {
     background-position: center;
 }
 
+.menu-lateral {
+    position: static;
+    width: 200px;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    margin: 57.3px 0 0 32px ;
+}
+
 .cabecalho__interacao {
     display: none;
 }
