@@ -6,21 +6,57 @@ body {
 }
 
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .cabecalho__logo {
-    align-items: flex-start;
     width: 145px;
-    height: 34, 05px;
-    left: 0px;
+    height: 34.05px;
+    left: 92.63px;
     top: 12px;
+    margin-left: 32px;
+}
+
+.cabecalho__pesquisa {
+    background: rgba(255, 255, 255, 0.16);    
+    color: #FFFFFF;
+    mix-blend-mode: lighten;
+    width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 64%;
+    padding: 16px 0 16px 0;
+}
+
+.cabecalho__perfil {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 8px;
+    align-items: center;
+    justify-self: flex-end;
+    color: #fff;
+    padding: 8px 32px;
+   
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cabecalho__perfil::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/Photo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cabecalho__interacao {
     display: none;
 }
-

@@ -1,16 +1,48 @@
 @media screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px)  {
+    body {
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+        background-color: #051d3b;
+        display: flex;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items:  flex-end;
+    
+    }
+    
+    .cabecalho__logo {
+        align-items: flex-start;
+        width: 145px;
+        height: 34, 05px;
+        left: 0px;
+        top: 12px;
+    }
+    
     .cabecalho__interacao {
         display: inline-block;
         justify-self: normal;
     }
-
+    
     .cabecalho__menu i::before {
         background-color: #051d3b;
-        content: url(../img/hamburguer.svg);
+        content: url(../img/menu.svg);
         font-size: 20px;
-
+    
     }
-
+    
     .cabecalho__menu {
         background-color: transparent;
         background-repeat: no-repeat;
@@ -19,13 +51,13 @@
         overflow: hidden;
         outline: none;
     }
-
-    .cabecalho__pesquisa i::before {
+    
+    .cabecalho__lupa i::before {
         content: url(../img/pesquisa.svg);
         font-size: 20px;
     }
-
-    .cabecalho__pesquisa {
+    
+    .cabecalho__lupa {
         background-color: transparent;
         background-repeat: no-repeat;
         border: none;
@@ -33,7 +65,7 @@
         overflow: hidden;
         outline: none;
     }
-
+    
     .principal {
         display: flex;
         flex-direction: column;
@@ -48,8 +80,6 @@
         border-radius: 8px;
     }
 
-    .desktop{
-        display:none;
-    }
+    
 
 }
