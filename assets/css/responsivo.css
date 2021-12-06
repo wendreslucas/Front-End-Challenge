@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+    .cabecalho__interacao {
+        display: inline-block;
+        justify-self: normal;
+    }
+
+    .cabecalho__menu i::before {
+        background-color: #051d3b;
+        content: url(../img/hamburguer.svg);
+        font-size: 20px;
+
+    }
+
+    .cabecalho__menu {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .cabecalho__pesquisa i::before {
+        content: url(../img/pesquisa.svg);
+        font-size: 20px;
+    }
+
+    .cabecalho__pesquisa {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        position: absolute;
+        width: 343px;
+        height: 492px;
+        left: 16px;
+        top: 112px;
+        background: #6BD1FF;
+        border-radius: 8px;
+    }
+
+    .desktop{
+        display:none;
+    }
+
+}

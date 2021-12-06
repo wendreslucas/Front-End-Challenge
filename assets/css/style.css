@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #051d3b;
+    display: grid;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.cabecalho__logo {
+    align-items: flex-start;
+    width: 145px;
+    height: 34, 05px;
+    left: 0px;
+    top: 12px;
+}
+
+.cabecalho__interacao {
+    display: none;
+}
+
