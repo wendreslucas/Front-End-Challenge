@@ -2,25 +2,29 @@ body {
     font-family: 'Inter', sans-serif;
     color: #fff;
     background-color: #051d3b;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
 }
 
+
+
 .cabecalho {
-    padding-top: 32px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;   
+    display: flex;  
+    justify-content: space-between;
     align-items: center;
 }
 
 .cabecalho__logo {
     width: 145px;
-    height: 34.05px;
-    left: 92.63px;
+    height: 34.05px;    
     top: 12px;
-    margin-left: 32px;
+    margin-left: 32px;   
 }
 
-.cabecalho__pesquisa {
+.cabecalho__pesquisa {    
     background: rgba(255, 255, 255, 0.16);    
     color: #FFFFFF;
     mix-blend-mode: lighten;
@@ -29,8 +33,10 @@ body {
     border-radius: 8px;
     font-size: 16px;
     line-height: 24px;
-    opacity: 64%;
-    padding: 16px 0 16px 0;
+    opacity: 0.5;
+    
+    grid-column: 2;
+    
 }
 
 .cabecalho__perfil {
@@ -41,7 +47,7 @@ body {
     justify-self: flex-end;
     color: #fff;
     padding: 8px 32px;
-   
+    grid-column: 3;
     font-size: 16px;
     line-height: 24px;
 }
@@ -57,11 +63,16 @@ body {
     background-position: center;
 }
 
+.principal {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
 .menu-lateral {
-    position: static;
+    /* position: static; */
     width: 200px;
     grid-column: 1;
-    grid-row: 2 / span 2;
+    grid-row: 1 / span 2;
     margin: 57.3px 0 0 32px ;
 }
 
@@ -78,6 +89,7 @@ body {
     align-items: center;
     padding-bottom: 16px;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .menu__item-titulo {
@@ -87,9 +99,18 @@ body {
 }
 
 .comunidade {
-    opacity: 56%;
+    opacity: 0.5;
 }
 
+.conteudo {
+    grid-column: 2;    
+    padding: 32px;    
+    background: #6BD1FF;
+    width:752px;
+    height:366px;
+    border-radius: 8px;
+   
+}
 
 
 
