@@ -8,8 +8,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr; */
 }
 
-
-
 .cabecalho {
     width: 100%;   
     display: flex;  
@@ -33,8 +31,7 @@ body {
     border-radius: 8px;
     font-size: 16px;
     line-height: 24px;
-    opacity: 0.5;
-    
+    opacity: 0.5;    
     grid-column: 2;
     
 }
@@ -63,7 +60,7 @@ body {
     background-position: center;
 }
 
-.principal {
+.menu {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
 }
@@ -112,6 +109,25 @@ body {
    
 }
 
+.projeto {
+    grid-column:3;
+}
+
+.projeto-heading {
+    font-size:12px;
+    line-height:18px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+.projeto-lateral {
+    /* position: static; */
+    width: 200px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin: 57.3px 0 0 32px ;
+}
 
 
 
