@@ -73,8 +73,22 @@ body {
     padding-bottom: 16px;
 }
 
+.menu__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
 
+.menu__item-titulo {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
 
+.comunidade {
+    opacity: 56%;
+}
 
 
 
