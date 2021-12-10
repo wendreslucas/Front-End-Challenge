@@ -9,8 +9,7 @@ body {
 }
 
 .cabecalho {
-    position: relative;
-     
+    position: relative;     
     display: flex;  
     justify-content: space-between;
     align-items: center;
@@ -61,16 +60,27 @@ body {
     background-position: center;
 }
 
+.principal {
+    position: relative;     
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
 .menu {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    display: flex;
+    
+    /* display: grid;
+    grid-template-columns:1fr 1fr 1fr; */
 }
 
 .menu-lateral {
     /* position: static; */
     width: 200px;
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    /* grid-column: 1;
+    grid-row: 1 / span 2; */
     margin: 57.3px 0 0 32px;
 }
 
@@ -101,7 +111,7 @@ body {
 }
 
 .conteudo {
-    grid-column: 2;    
+    /* grid-column: 2;     */
     padding: 32px;    
     background: #6BD1FF;
     width:752px;
@@ -111,7 +121,7 @@ body {
 }
 
 .projeto {
-    grid-column:3;
+    /* grid-column:3; */
 }
 
 .projeto-heading {
@@ -125,8 +135,8 @@ body {
 .projeto-lateral {
     /* position: static; */
     width: 200px;
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    /* grid-column: 1;
+    grid-row: 1 / span 2; */
     margin: 57.3px 0 0 32px ;
 }
 
