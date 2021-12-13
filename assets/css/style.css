@@ -1,15 +1,10 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #fff;
-    background-color: #051d3b;
-   
-    /* display: flex;
-    flex-direction: column; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+    background-color: #051d3b;   
 }
 
-.cabecalhoPrincipal .container {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,13 +49,16 @@ body {
     background-position: center;
 }
 
-.principal .menu {    
+.menu {    
     display: flex;    
     justify-content: space-between;    
-    padding: 40px 32px 0 32px;
+    padding: 38px 32px 0 32px;
+    align-items: flex-start;
 }
 
-
+.menu-lateral {
+    margin-right: 60px;
+}
 
 .menu-heading {
     font-size:12px;
@@ -119,11 +117,6 @@ body {
 
 .visualizador:hover {
     background: #5081FB;
-
-}
-
-.principal .projeto {
-    padding: 40px 32px 0 0;
 }
 
 .projeto__lateral {
@@ -137,7 +130,7 @@ body {
     line-height:18px;
     letter-spacing: 6px;
     font-weight: 400;
-    padding-bottom: 16px;    
+    padding-bottom: 16px;   
 }
 
 .projeto__nome {
@@ -163,6 +156,60 @@ body {
     text-align: start;  
     resize: none;  
 }
+
+.projeto__personalizar {
+    display: flex;
+    flex-direction: column;
+    padding-top:  40px;
+}
+
+.projeto__linguagens {
+    background: rgba(255, 255, 255, 0.16);    
+    color: #FFFFFF;
+    mix-blend-mode: lighten;
+    width: 272px;
+    height:56px;
+    border-radius: 8px;
+    margin-bottom: 24px ;
+    opacity: 0.5;
+}
+
+.projeto__botao {
+    width: 272px;
+    height: 56px;
+    border-radius: 8px;
+    background:#051d3b;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C4C4C4;    
+}
+
+.projeto__cor {
+    position: inherit;
+    background: #6BD1FF;
+    width: 256px;
+    height:40px;
+    
+    border-radius: 4px;
+    margin-bottom: 40px ;  
+    
+}
+
+.projeto__salvar {
+    width: 272px;
+    height:56px;
+    border-radius: 8px;
+    background:#5081FB;
+    font-size: 16px;
+    color:#051D3B;
+    line-height:24px;  
+    transition: 0.3s; 
+}
+
+/* .projeto__salvar :hover {
+    background: blue-300;
+} */
+
 
 .cabecalho__interacao {
     display: none;
