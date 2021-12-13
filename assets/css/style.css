@@ -105,7 +105,15 @@ body {
     color: white;
 }
 
-
+.editor__code {
+    outline: none;  
+    padding-top: 1.5rem;  
+    font-family: var(--roboto);
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: normal;  
+    overflow: hidden;
+  }
 
 .visualizador {
     width: 752px;
