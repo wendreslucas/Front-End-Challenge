@@ -101,7 +101,11 @@ body {
     border-radius: 8px;
     padding: 16px 16px 16px 16px;
     background: #141414;
+    padding: 1rem;  
+    color: white;
 }
+
+
 
 .visualizador {
     width: 752px;
@@ -187,7 +191,7 @@ body {
     margin-bottom: 40px;
 }
 
-.projeto__cor {    
+.projeto__cor {
     background: #6BD1FF;
     width: 256px;
     height: 40px;
