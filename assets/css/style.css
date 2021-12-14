@@ -21,6 +21,7 @@ body {
     line-height: 24px;   
     padding-left: 16px;
     border:none;
+    transition: 0.3s;
 }
 
 .cabecalho__pesquisa:hover {  
@@ -87,8 +88,22 @@ body {
     line-height: 24px;
 }
 
+.menu__img-comunidade{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu__img-comunidade:hover{
+    opacity: 1;
+}
+
 .comunidade {
     opacity: 0.5;
+    transition: 0.3s;
+}
+
+.comunidade:hover{
+    opacity: 1;
 }
 
 .conteudo__principal {
@@ -107,6 +122,7 @@ body {
     background: #141414;
     padding: 1rem;  
     color: white;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.24);
 }
 
 .editor__code {
@@ -165,11 +181,17 @@ body {
     width: 272px;
     height: 56px;
     border-radius: 8px;
-    mix-blend-mode: lighten;
-    
+    mix-blend-mode: lighten;    
     margin-bottom: 12px;
     padding-left: 16px;
     cursor: pointer;
+    transition: 0.3s;
+    border:none;
+}
+
+.projeto__nome:hover{
+    background:rgba(255, 255, 255, 0.24);  
+    mix-blend-mode: lighten;
 }
 
 .projeto__descricao {
@@ -178,19 +200,14 @@ body {
     mix-blend-mode: lighten;
     width: 272px;
     height: 80px;
-    border-radius: 8px;
-    
+    border-radius: 8px;    
     vertical-align: top;
     text-align: start;
     resize: none;
     padding-left: 16px;
     cursor: pointer;
-}
-
-.projeto__nome:hover{
-    background:rgba(255, 255, 255, 0.24);  
-    mix-blend-mode: lighten;
-    cursor: pointer;
+    transition: 0.3s;
+    border:none;
 }
 
 .projeto__descricao:hover {
@@ -216,6 +233,8 @@ body {
     opacity: 0.5;
     cursor: pointer;
     padding-left: 16px;
+    border:none;
+    transition: 0.3s;
 }
 
 .projeto__linguagens:hover {
