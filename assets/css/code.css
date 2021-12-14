@@ -2,30 +2,35 @@ body {
     font-family: 'Inter', sans-serif;
     color: #fff;
     background-color: #051d3b;
+    display:grid;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
 }
 
 .container {
     display: flex;
     align-items: center;
+    grid-area: cabecalho;
     justify-content: space-between;
     padding: 32px 32px 0 32px;
 }
 
 .cabecalho__pesquisa {
-    background:rgba(255, 255, 255, 0.16);
-    color: #FFFFFF;    
+    background: rgba(255, 255, 255, 0.16);
+    color: #FFFFFF;
     width: 752px;
     height: 56px;
     border-radius: 8px;
     font-size: 16px;
-    line-height: 24px;   
+    line-height: 24px;
     padding-left: 16px;
-    border:none;
+    border: none;
     transition: 0.3s;
 }
 
-.cabecalho__pesquisa:hover {  
-    background:rgba(255, 255, 255, 0.24);  
+.cabecalho__pesquisa:hover {
+    background: rgba(255, 255, 255, 0.24);
     mix-blend-mode: lighten;
     cursor: pointer;
 }
@@ -45,7 +50,7 @@ body {
     transition: 0.3s;
 }
 
-.cabecalho__perfil:hover{
+.cabecalho__perfil:hover {
     background: rgba(255, 255, 255, 0.24);
 }
 
@@ -61,14 +66,14 @@ body {
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px 32px 0 32px;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
 }
 
 .menu-lateral {
     margin-right: 60px;
+    padding: 40PX 0 0 32PX;
 }
 
 .menu-heading {
@@ -94,12 +99,12 @@ body {
     line-height: 24px;
 }
 
-.menu__img-comunidade{
+.menu__img-comunidade {
     opacity: 0.5;
     transition: 0.3s;
 }
 
-.menu__img-comunidade:hover{
+.menu__img-comunidade:hover {
     opacity: 1;
 }
 
@@ -108,6 +113,53 @@ body {
     transition: 0.3s;
 }
 
-.comunidade:hover{
+.comunidade:hover {
     opacity: 1;
+}
+
+.codigos{
+    display: flex;
+    padding-top: 38px;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    flex-grow: column;
+}
+
+.conteudo__principal {
+    padding: 24px;
+    background: #6BD1FF;
+    width: 520px;
+    height: 288px;
+    border-radius: 8px;
+}
+
+.conteudo__editor {
+    width: 472px;
+    height: 240px;
+    border-radius: 8px;
+    padding: 12px 12px 12px 12px;
+    background: #141414;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.24);
+}
+
+.editor__code {
+    outline: none;
+    padding-top: 1.5rem;
+    font-family: var(--roboto);
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: normal;
+    overflow: hidden;
+}
+
+
+.cabecalho__interacao {
+    display: none;
+}
+
+.conteudo_1 {
+
 }
