@@ -1,0 +1,113 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #051d3b;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px 0 32px;
+}
+
+.cabecalho__pesquisa {
+    background:rgba(255, 255, 255, 0.16);
+    color: #FFFFFF;    
+    width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;   
+    padding-left: 16px;
+    border:none;
+    transition: 0.3s;
+}
+
+.cabecalho__pesquisa:hover {  
+    background:rgba(255, 255, 255, 0.24);  
+    mix-blend-mode: lighten;
+    cursor: pointer;
+}
+
+.cabecalho__perfil {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 8px;
+    align-items: center;
+    justify-self: flex-end;
+    color: #fff;
+    padding: 8px 32px;
+    grid-column: 3;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cabecalho__perfil:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.cabecalho__perfil::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/Photo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 32px 0 32px;
+    align-items: flex-start;
+}
+
+.menu-lateral {
+    margin-right: 60px;
+}
+
+.menu-heading {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    cursor: pointer;
+    font-weight: 400;
+
+}
+
+.menu__item-titulo {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.menu__img-comunidade{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu__img-comunidade:hover{
+    opacity: 1;
+}
+
+.comunidade {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.comunidade:hover{
+    opacity: 1;
+}
