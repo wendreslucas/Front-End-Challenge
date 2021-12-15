@@ -1,48 +1,31 @@
-@media screen and (max-width: 768px) {
-    .desktop {
+@media screen and (max-width:375px){
+    .container{
+       display: flex;
+       align-items: center;
+       justify-content: space-between; 
+       padding: 8px 8px 0 8px;
+    }
+    
+    .cabecalho__pesquisa, .cabecalho__perfil {
         display: none;
-    }
-}
-
-@media screen and (max-width: 375px)  {
-    body {
-        font-family: 'Inter', sans-serif;
-        color: #fff;
-        background-color: #051d3b;
-        display: flex;
-    }
-    
-    .container {
-        width: 100%;
-    }
-
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        align-items:  flex-end;
-    
-    }
+    }   
     
     .cabecalho__logo {
-        align-items: flex-start;
         width: 145px;
-        height: 34, 05px;
-        left: 0px;
-        top: 12px;
     }
-    
+
     .cabecalho__interacao {
-        display: inline-block;
-        justify-self: normal;
-    }
-    
+        width: 96px;
+        display: flex;
+        justify-content: space-between;
+    }   
+
     .cabecalho__menu i::before {
         background-color: #051d3b;
         content: url(../img/menu.svg);
-        font-size: 20px;
-    
+        font-size: 20px;    
     }
-    
+
     .cabecalho__menu {
         background-color: transparent;
         background-repeat: no-repeat;
@@ -51,10 +34,11 @@
         overflow: hidden;
         outline: none;
     }
-    
+   
     .cabecalho__lupa i::before {
         content: url(../img/pesquisa.svg);
         font-size: 20px;
+        
     }
     
     .cabecalho__lupa {
@@ -65,21 +49,29 @@
         overflow: hidden;
         outline: none;
     }
-    
-    .principal {
+
+    .menu {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 32px;
-        position: absolute;
+        align-items:center;
+        padding: 24px;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .conteudo__principal {
         width: 343px;
-        height: 492px;
-        left: 16px;
-        top: 112px;
-        background: #6BD1FF;
-        border-radius: 8px;
+        height: 492px;        
+    }
+
+    .conteudo__editor {
+        width: 279px;
+        height: 428px;
     }
 
     
-
 }
