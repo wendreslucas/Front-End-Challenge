@@ -13,19 +13,16 @@
     .cabecalho__logo {
         width: 145px;
     }
-
     .cabecalho__interacao {
         width: 96px;
         display: flex;
         justify-content: space-between;
     }   
-
     .cabecalho__menu i::before {
-        background-color: #051d3b;
+        background-color: var(--azulescuro);
         content: url(../img/menu.svg);
         font-size: 20px;    
     }
-
     .cabecalho__menu {
         background-color: transparent;
         background-repeat: no-repeat;
@@ -49,28 +46,34 @@
         overflow: hidden;
         outline: none;
     }
-
     .menu {
         display: flex;
         flex-direction: column;
         align-items:center;
         padding: 24px;
     }
-
-    .conteudo {
+    .cartao {
         display: flex;
         flex-direction: column;
         align-items:center;
     }
-
-    .conteudo__principal {
+    .cartao__conteudo {
         width: 343px;
         height: 492px;        
     }
-
-    .conteudo__editor {
+    .cartao__editor {
         width: 279px;
         height: 428px;
+    }
+
+    .cartao__code {
+        outline: none;  
+        padding-top: 1.5rem;  
+        font-family: var(--roboto);
+        font-size: 0.875rem;
+        font-weight: normal;
+        line-height: normal;  
+        overflow: hidden;
     }
 
     .visualizador {
@@ -96,5 +99,5 @@
         display: none;
     }
 
-    
+
 }

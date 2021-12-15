@@ -10,10 +10,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link href="assets/css/reset.css" rel="stylesheet">
+    
+    <link href="assets/css/base/base.css" rel="stylesheet">
     <link href="assets/css/dracula.css" rel="stylesheet">
+    
+    
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/componente/editor.css" rel="stylesheet">
     <link href="assets/css/responsivo.css" rel="stylesheet">
+    
     <title>Challenge Alura</title>
 </head>
 
@@ -21,7 +26,7 @@
     <header class="cabecalhoPrincipal">
         <div class="container">
             <a href="index.html"><img class="cabecalho__logo" src="assets/img/Logo.svg" alt="Logo Alura"></a>
-            <input class="cabecalho__pesquisa" type="text" placeholder="Busque por algo"></input>
+            <input class="cabecalho__pesquisa" type="text" placeholder="Busque por algo" aria-label="Busque por algo"></input>
             <p class="cabecalho__perfil">Harry</p>
             <div class="cabecalho__interacao">
                 <button class="cabecalho__lupa" aria-label="Pesquisa"><i></i></button>
@@ -32,11 +37,11 @@
     <div class="principal">
         <main class="menu">
             
-            <div class="conteudo">
-                <div class="conteudo__principal">
-                    <div class="conteudo__editor">
+            <div class="cartao">
+                <div class="cartao__conteudo">
+                    <div class="cartao__editor">
                         <img src="assets/img/mac_buttons.svg" alt="Botões do Mac">
-                        <div class="editor__code" contenteditable="true"></div>
+                        <div class="cartao__code" contenteditable="true"></div>
                     </div>
                 </div>
                 <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>
@@ -61,9 +66,9 @@
                 <div id="projetoLateral" class="projeto__lateral">
                     <h2 class="projeto-heading">SEU PROJETO</h2>
                     <input id="nomeProjeto" class="projeto__nome" name="nomeProjetoTeste" type="text"
-                        placeholder="Nome do Seu projeto">
+                        placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
                     <textarea class="projeto__descricao" name="descricaoProjeto" type="text"
-                        placeholder="Descrição do seu projeto"></textarea>
+                        placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto"></textarea>
                 </div>
                 <div class="projeto__personalizar">
                     <h2 class="projeto-heading">PERSONALIZAÇÃO</h2>

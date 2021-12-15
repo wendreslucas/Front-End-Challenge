@@ -1,8 +1,4 @@
-body {
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-    background-color: #051d3b;
-}
+
 
 .container {
     display: flex;
@@ -13,11 +9,11 @@ body {
 
 .cabecalho__pesquisa {
     background:rgba(255, 255, 255, 0.16);
-    color: #FFFFFF;    
+    color: var(--branco);    
     width: 752px;
     height: 56px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     line-height: 24px;   
     padding-left: 16px;
     border:none;
@@ -36,10 +32,10 @@ body {
     column-gap: 8px;
     align-items: center;
     justify-self: flex-end;
-    color: #fff;
+    color:var(--branco);
     padding: 8px 32px;
     grid-column: 3;
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     line-height: 24px;
     border-radius: 8px;
     transition: 0.3s;
@@ -72,7 +68,7 @@ body {
 }
 
 .menu-heading {
-    font-size: 12px;
+    font-size: var(--tamanho-subtitulo);
     line-height: 18px;
     letter-spacing: 6px;
     font-weight: 400;
@@ -90,7 +86,7 @@ body {
 
 .menu__item-titulo {
     padding-left: 16px;
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     line-height: 24px;
 }
 
@@ -112,34 +108,6 @@ body {
     opacity: 1;
 }
 
-.conteudo__principal {
-    padding: 32px;
-    background: #6BD1FF;
-    width: 752px;
-    height: 366px;
-    border-radius: 8px;
-}
-
-.conteudo__editor {
-    width: 688px;
-    height: 302px;
-    border-radius: 8px;
-    padding: 16px 16px 16px 16px;
-    background: #141414;
-    padding: 1rem;  
-    color: white;
-    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.24);
-}
-
-.editor__code {
-    outline: none;  
-    padding-top: 1.5rem;  
-    font-family: var(--roboto);
-    font-size: 0.875rem;
-    font-weight: normal;
-    line-height: normal;  
-    overflow: hidden;
-  }
 
 .visualizador {
     width: 752px;
@@ -147,8 +115,8 @@ body {
     border-radius: 8px;
     background: rgba(80, 129, 251, 0.08);
     margin-top: 32px;
-    font-size: 16px;
-    color: #fff;
+    font-size: var(--tamanho-padrao);
+    color: var(--branco);
     line-height: 24px;
     transition: 0.3s;
     border:none;
@@ -174,7 +142,7 @@ body {
 
 
 .projeto-heading {
-    font-size: 12px;
+    font-size: var(--tamanho-subtitulo);
     line-height: 18px;
     letter-spacing: 6px;
     font-weight: 400;
@@ -183,7 +151,7 @@ body {
 
 .projeto__nome {
     background: rgba(255, 255, 255, 0.16);
-    color:rgba(255, 255, 255, 1);
+    color:var(--branco);
     width: 272px;
     height: 56px;
     border-radius: 8px;
@@ -202,7 +170,7 @@ body {
 
 .projeto__descricao {
     background: rgba(255, 255, 255, 0.16);
-    color: #FFFFFF;
+    color: var(--branco);
     mix-blend-mode: lighten;
     width: 272px;
     height: 80px;
@@ -210,7 +178,8 @@ body {
     vertical-align: top;
     text-align: start;
     resize: none;
-    padding-left: 16px;
+    padding-left: 14px;
+    padding-top: 16px;
     cursor: pointer;
     transition: 0.3s;
     border:none;
@@ -230,7 +199,7 @@ body {
 
 .projeto__linguagens {
     background: rgba(255, 255, 255, 0.16);
-    color: #FFFFFF;
+    color: var(--branco);
     mix-blend-mode: lighten;
     width: 272px;
     height: 56px;
@@ -274,7 +243,7 @@ body {
     height: 56px;
     border-radius: 8px;
     background: #5081FB;
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     color: #051D3B;
     line-height: 24px;
     transition: 0.3s;

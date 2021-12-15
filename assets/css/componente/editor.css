@@ -1,0 +1,30 @@
+.cartao__conteudo {
+    box-sizing: border-box;
+    padding: 32px;
+    background: #6BD1FF;
+    width: 752px;
+    height: 366px;
+    border-radius: 8px;
+}
+
+.cartao__editor {
+    box-sizing: border-box;
+    width: 688px;
+    height: 302px;
+    border-radius: 8px;
+    padding: 16px 16px 16px 16px;
+    background: #141414;
+    padding: 1rem;  
+    color: var(--branco);
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.24);
+}
+
+.cartao__code {
+    outline: none;  
+    padding-top: 1.5rem;  
+    font-family: var(--roboto);
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: normal;  
+    overflow: hidden;
+}

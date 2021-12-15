@@ -1,0 +1,9 @@
+:root {
+    --azulescuro:#051d3b;
+    --branco : #fff;
+
+    --fonte-corpo: 'Inter', sans-serif;
+    --fonte-codigo: 'Roboto', sans-serif;
+    --tamanho-subtitulo: 12px;
+    --tamanho-padrao: 16px;
+}
