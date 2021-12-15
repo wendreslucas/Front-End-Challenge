@@ -73,5 +73,28 @@
         height: 428px;
     }
 
+    .visualizador {
+        width: 343px;
+        margin-bottom: 40px;
+    }
+
+    .projeto__nome {
+        width: 343px;
+        height: 56px;
+    }
+
+    .projeto__descricao, .projeto__linguagens, .projeto__botao, .projeto__salvar {
+        width: 343px;
+    }
+
+    .projeto__cor {
+        width:327px;
+        height: 40px;
+    }
+
+    .menu-lateral {
+        display: none;
+    }
+
     
 }
