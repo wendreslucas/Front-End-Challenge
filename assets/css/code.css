@@ -1,7 +1,7 @@
 body {
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-    background-color: #051d3b;
+    font-family: var(--fonte-corpo);
+    color: var(--branco);
+    background-color: var(--azulescuro);
     display: grid;
     grid-template-areas:
         "cabecalho"
@@ -126,9 +126,7 @@ body {
     display: flex;
     padding:38px 24px 24px;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    
+    justify-content: space-between;    
 }
 
 .conteudo__principal {
@@ -172,14 +170,14 @@ body {
 }
 
 .informacoes__projeto-titulo {
-    font-size: 21px;
+    font-size: var(--tamanho-titulo);
     font-weight: 700;
     line-height: 31.5px;
     padding: 24px 24px 0 24px;
 }
 
 .informacoes__projeto-descricao {
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     font-weight:400;
     line-height: 24px;
     padding: 0 24px 24px 24px;
@@ -187,9 +185,24 @@ body {
 
 .interacao {
     display: flex;
-    align-items: center;
+    align-items: center;   
+}
 
-    
+.interacao__autor{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 105px;
+    height: 45px;
+}
+
+.img__autor{
+    width: 24px;
+    height: 24px;
+}
+
+.autor {
+    font-size: var(--tamanho-padrao);
 }
 
 .interacao__comentario {
@@ -197,7 +210,7 @@ body {
 }
 
 .comentario__contador {
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     font-weight: 400;
     line-height: 24px;
     padding-right: 18px;
@@ -208,7 +221,7 @@ body {
 }
 
 .like__contador {
-    font-size: 16px;
+    font-size: var(--tamanho-padrao);
     font-weight: 400;
     line-height: 24px;
     padding-right: 267px;
