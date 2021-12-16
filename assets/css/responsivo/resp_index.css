@@ -16,7 +16,7 @@
     .cabecalho__interacao {
         width: 96px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }   
 
    
