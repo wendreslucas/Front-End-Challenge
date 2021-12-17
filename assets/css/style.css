@@ -63,9 +63,9 @@
     align-items: flex-start;
 }
 
-.menu-lateral {
+/* .menu-lateral {
     margin-right: 60px;
-}
+} */
 
 .menu-heading {
     font-size: var(--tamanho-subtitulo);

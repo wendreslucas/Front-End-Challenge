@@ -121,7 +121,7 @@
         flex-direction: column;
         position: absolute;
         align-items: center;
-        /* right: -100vw;  */
+        right: -100vw;
         transition: .25s;
         width: 254px;
         height: 571px;
@@ -130,6 +130,11 @@
         padding: 24px;
         font-size: var(--tamanho-padrao);
     }
+
+    .menu-lateral--ativo {
+        right: 0;
+        transition: .25s;
+    } 
 
     .menu__linha {
         display: flex;
@@ -147,7 +152,7 @@
     align-items: center;
     justify-content: center;
     width: 106px;
-    height:56px;
+    height:56px;    
     color:var(--branco);
     padding: 8px 32px;
     grid-column: 3;
@@ -168,10 +173,7 @@
     background-position: center;
     }
 
-    /* .menu__lateral--ativo {
-        right: 1;
-        transition: .25s;
-    } */
+    
 
 
 }
