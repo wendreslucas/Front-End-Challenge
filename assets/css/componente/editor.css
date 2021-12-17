@@ -28,3 +28,29 @@
     line-height: normal;  
     overflow: hidden;
 }
+
+.visualizador {
+    width: 704px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(80, 129, 251, 0.08);
+    margin-top: 32px;
+    font-size: var(--tamanho-padrao);
+    color: var(--branco);
+    line-height: 24px;
+    transition: 0.3s;
+    border:none;
+}
+
+.visualizador:hover {
+    background: rgba(80, 129, 251, 0.16);
+}
+
+.visualizador:active {
+    background:rgba(80, 129, 251, 0.16);
+    outline: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+.visualizador:focus {
+    background:rgba(80, 129, 251, 0.24)
+}

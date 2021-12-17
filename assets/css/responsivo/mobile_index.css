@@ -121,7 +121,7 @@
         flex-direction: column;
         position: absolute;
         align-items: center;
-        right: -100vw;
+        right: -5000vw;
         transition: .25s;
         width: 254px;
         height: 571px;

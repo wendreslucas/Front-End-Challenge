@@ -1,0 +1,86 @@
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 704px;
+        height:56px;
+        padding: 8px 8px 0 8px;
+    }
+    
+    .cabecalho__logo {
+        width: 145px;
+    }
+
+    .cabecalho__pesquisa {
+        width: 431px;
+        height: 56px;
+    }
+
+    .item__icone {
+        display: block;
+        margin-right: 1rem;
+        width: 48px;
+        height: 48px;
+        border-radius: none;
+        background-color: var(--azulescuro);
+        background-size: 1.375rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .item__icone--menu {
+        background-image: url(../../img/menu.svg);
+        border: none;
+    }
+
+    .item__icone--menu:hover {
+        border-radius: 16px;
+        background-color: rgba(80, 129, 251, 0.08);
+    }
+
+    .item__icone--menu:active {
+        background-color: rgba(80, 129, 251, 0.16);
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartao__conteudo {
+        width: 704px;
+        height: 366px;
+    }
+
+    .cartao__editor {
+        width: 604px;
+        height: 302px;
+    }
+
+    .cartao__code {
+        outline: none;
+        padding-top: 1.5rem;
+        font-family: var(--roboto);
+        font-size: 0.875rem;
+        font-weight: normal;
+        line-height: normal;
+        overflow: hidden;
+    }
+            
+
+
+
+
+
+
+
+
+
+
+    .cabecalho__perfil {
+        display: none;
+    }
+
+}
