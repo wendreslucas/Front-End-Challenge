@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">    
+        rel="stylesheet">
     <link href="assets/css/base/base.css" rel="stylesheet">
-    <link href="assets/css/dracula.css" rel="stylesheet">    
+    <link href="assets/css/dracula.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/componente/editor.css" rel="stylesheet">
     <link href="assets/css/responsivo/resp_index.css" rel="stylesheet">
-    
+
     <title>Challenge Alura</title>
 </head>
 
@@ -23,13 +23,17 @@
     <header class="cabecalhoPrincipal">
         <div class="container">
             <a href="index.html"><img class="cabecalho__logo" src="assets/img/Logo.svg" alt="Logo Alura"></a>
-            <input class="cabecalho__pesquisa" type="text" placeholder="Busque por algo" aria-label="Busque por algo"></input>
+            <input class="cabecalho__pesquisa" type="text" placeholder="Busque por algo"
+                aria-label="Busque por algo"></input>
             <p class="cabecalho__perfil">Harry</p>
             <ul class="cabecalho__interacao">
-                <li class="interacao">                    
+                <li class="interacao">
                     <button class="item__icone item__icone--lupa" aria-label="Pesquisa"><i></i></button>
                 </li>
-                <li class="interacao">                    
+                <li class="interacao" onclick="myFunction(this)">
+                    <!-- <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>                 -->
                     <button class="item__icone item__icone--menu" aria-label="Menu"><i></i></button>
                 </li>
             </ul>
@@ -37,7 +41,6 @@
     </header>
     <div class="principal">
         <main class="menu">
-            
             <div class="cartao">
                 <div class="cartao__conteudo">
                     <div class="cartao__editor">
@@ -61,6 +64,8 @@
                             </a>
                             <h4 class="menu__item-titulo comunidade">Comunidade</h4>
                         </li>
+                        <div class="menu__linha"></div>
+                        <p class="menu__perfil">Harry</p>
                 </nav>
             </div>
             <form id="projetoTeste" class="projeto">
@@ -88,7 +93,7 @@
             </form>
     </div>
     </main>
-
+    <script src="index.js"></script>
     <script src="code.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>

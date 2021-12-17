@@ -263,12 +263,9 @@
     background: rgba(150, 185, 253, 1);
 }
 
-/* .projeto__salvar :hover {
-    background: blue-300;
-} */
-
-
-.cabecalho__interacao {
+.cabecalho__interacao, .menu__perfil{
     display: none;
 }
+
+
 
