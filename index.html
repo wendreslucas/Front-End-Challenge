@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link href="assets/css/base/_reset.css" rel="stylesheet">
     <link href="assets/css/base/base.css" rel="stylesheet">
     <link href="assets/css/dracula.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -31,7 +32,7 @@
                 <li class="interacao">
                     <button class="item__icone item__icone--lupa" aria-label="Pesquisa"><i></i></button>
                 </li>
-                <li class="interacao">                                   
+                <li class="interacao">
                     <button class="item__icone item__icone--menu" aria-label="Menu"><i></i></button>
                 </li>
             </ul>
@@ -76,15 +77,16 @@
                 </div>
                 <div class="projeto__personalizar">
                     <h2 class="projeto-heading">PERSONALIZAÇÃO</h2>
-                    <select class="projeto__linguagens">
-                        <option value="hide">Linguagem</option>
-                        <option value="Javascript">Javascript</option>
-                        <option value="C#">CSharp</option>
-                        <option value="Python">Python</option>
-
-                    </select>
-                    <div class="projeto__botao">
-                        <input class="projeto__cor" type="color"></input>
+                    <div class="projeto__linguagembotao">
+                        <select class="projeto__linguagens">
+                            <option value="hide">Linguagem</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="C#">CSharp</option>
+                            <option value="Python">Python</option>
+                        </select>
+                        <div class="projeto__botao">
+                            <input class="projeto__cor" type="color"></input>
+                        </div>
                     </div>
                 </div>
                 <button class="projeto__salvar">Salvar Projeto</button>

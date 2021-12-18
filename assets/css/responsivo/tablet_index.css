@@ -1,11 +1,17 @@
 @media screen and (max-width: 768px) {
+    body{
+        margin-left: 28px; 
+    }
+    .cabecalhoPrincipal {
+        /* padding: 28px; */
+    }
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 704px;
-        height:56px;
-        padding: 8px 8px 0 8px;
+        height:56px;    
     }
     
     .cabecalho__logo {
@@ -13,13 +19,27 @@
     }
 
     .cabecalho__pesquisa {
+        background: rgba(255, 255, 255, 0.16);
+        color: var(--branco);
         width: 431px;
         height: 56px;
+        border-radius: 8px;
+        font-size: var(--tamanho-padrao);
+        line-height: 24px;
+        padding-left: 16px;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .cabecalho__pesquisa:hover {
+        background: rgba(255, 255, 255, 0.24);
+        mix-blend-mode: lighten;
+        cursor: pointer;
     }
 
     .item__icone {
         display: block;
-        margin-right: 1rem;
+        /* margin-right: 1rem; */
         width: 48px;
         height: 48px;
         border-radius: none;
@@ -46,17 +66,19 @@
     .cartao {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
+        /* align-items: center;         */
     }
 
     .cartao__conteudo {
         width: 704px;
         height: 366px;
+        margin-top: 40px;
     }
 
     .cartao__editor {
-        width: 604px;
-        height: 302px;
+        width: 640px;
+        height: 302px;        
     }
 
     .cartao__code {
@@ -69,6 +91,193 @@
         overflow: hidden;
     }
             
+    .projeto {
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .projeto-heading {
+        font-size: var(--tamanho-subtitulo);
+        line-height: 18px;
+        letter-spacing: 6px;
+        font-weight: 400;
+        padding-bottom: 16px;
+    }
+    
+    .projeto__nome {
+        background: rgba(255, 255, 255, 0.16);
+        color: var(--branco);
+        width: 704px;
+        height: 56px;
+        border-radius: 8px;
+        mix-blend-mode: lighten;
+        margin-bottom: 12px;
+        padding-left: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+    
+    .projeto__nome:hover {
+        background: rgba(255, 255, 255, 0.24);
+        mix-blend-mode: lighten;
+    }
+    
+    .projeto__descricao {
+        background: rgba(255, 255, 255, 0.16);
+        color: var(--branco);
+        mix-blend-mode: lighten;
+        width: 704px;
+        height: 80px;
+        border-radius: 8px;
+        vertical-align: top;
+        text-align: start;
+        resize: none;
+        padding-left: 14px;
+        padding-top: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+        margin-bottom: 40px;
+    }
+    
+    .projeto__descricao:hover {
+        background: rgba(255, 255, 255, 0.24);
+        mix-blend-mode: lighten;
+        cursor: pointer;
+    }
+    
+    .projeto__linguagembotao {
+        display: flex;
+        flex-direction: row;
+        /* padding-top: 40px; */
+    } 
+
+
+    
+    .projeto__linguagens {
+        background: rgba(255, 255, 255, 0.16);
+        color: var(--branco);
+        mix-blend-mode: lighten;
+        width: 344px;
+        height: 56px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        margin-right: 15px;
+        opacity: 0.5;
+        cursor: pointer;
+        padding-left: 16px;
+        border: none;
+        transition: 0.3s;
+    }
+    
+    .projeto__linguagens:hover {
+        background: rgba(255, 255, 255, 0.24);
+    }
+    
+    .projeto__botao {
+        display: block;
+        width: 344px;
+        height: 56px;
+        border-radius: 8px;
+        background: #051d3b;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #C4C4C4;
+        margin-bottom: 40px;
+    }
+    
+    
+    .projeto__cor {
+        background: #6BD1FF;
+        width: 328px;
+        height: 40px;
+        top: 468px;
+        border-radius: 4px;
+        margin: 7px 5px 0 7px;
+    }
+    
+    .projeto__salvar {
+        width: 704px;
+        height: 56px;
+        border-radius: 8px;
+        background: #5081FB;
+        font-size: var(--tamanho-padrao);
+        color: #051D3B;
+        line-height: 24px;
+        transition: 0.3s;
+    }
+    
+    .projeto__salvar:hover {
+        background: rgba(123, 164, 252, 1);
+    }
+    
+    .projeto__salvar:active {
+        background: rgba(123, 164, 252, 1);
+        outline: 4px solid rgba(80, 129, 251, 0.72);
+        transition: 0.3s;
+    }
+    
+    .projeto__salvar:focus {
+        background: rgba(150, 185, 253, 1);
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        right: -5000vw;
+        transition: .25s;
+        width: 254px;
+        height: 912px;
+        border-radius: 8px;
+        background-color: rgba(45, 65, 91, 1);
+        padding: 24px;
+        font-size: var(--tamanho-padrao);
+    }
+
+    .menu-lateral--ativo {
+        right: 0;
+        transition: .25s;
+    } 
+
+    .menu__linha {
+        display: flex;
+        flex-direction: column;
+        width: 206px;
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+        opacity: 0.1;
+        margin-top: 24px;
+    }
+
+    .menu__perfil {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height:56px;    
+    color:var(--branco);
+    padding: 8px 32px;
+    grid-column: 3;
+    font-size: var(--tamanho-padrao);
+    line-height: 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    }
+
+    .menu__perfil::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/Photo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 
 
 
@@ -79,7 +288,7 @@
 
 
 
-    .cabecalho__perfil {
+    .cabecalho__perfil, .item__icone--lupa, .menu-heading {
         display: none;
     }
 

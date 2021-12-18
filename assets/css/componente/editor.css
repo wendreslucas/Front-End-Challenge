@@ -12,9 +12,9 @@
     width: 688px;
     height: 302px;
     border-radius: 8px;
-    padding: 16px 16px 16px 16px;
+    /* padding: 16px 16px 16px 16px; */
     background: #141414;
-    padding: 1rem;  
+    /* padding: 1rem;   */
     color: var(--branco);
     box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.24);
 }
