@@ -1,14 +1,18 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     body{
-        margin-left: 28px; 
+        margin-left: 27px; 
+    }
+
+    .cabecalho__principal{
+        width: 768x;
+        height:56px;
     }
 
     .container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 704px;
-        height:56px;    
+        justify-content: space-around;
+            
     }
     
     .cabecalho__logo {
@@ -87,13 +91,17 @@
         line-height: normal;
         overflow: hidden;
     }
+
+    .visualizador {
+        width: 704px;
+    }
             
     .projeto {
         display: flex;
         flex-direction: column;
     }    
     
-    .projeto-heading {
+    .projeto__heading {
         font-size: var(--tamanho-subtitulo);
         line-height: 18px;
         letter-spacing: 6px;
@@ -275,15 +283,6 @@
     background-repeat: no-repeat;
     background-position: center;
     }
-
-
-
-
-
-
-
-
-
 
     .cabecalho__perfil, .item__icone--lupa, .menu-heading {
         display: none;
