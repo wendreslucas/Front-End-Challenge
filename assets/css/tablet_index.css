@@ -1,20 +1,20 @@
-@media screen and (max-width: 768px) {
-    body{
-        margin-left: 27px; 
+@media screen and (min-width: 768px) {
+    body {
+        margin-left: 27px;
     }
 
-    .cabecalho__principal{
+    .cabecalho__principal {
         width: 768x;
-        height:56px;
+        height: 56px;
     }
 
     .container {
         display: flex;
         align-items: center;
         justify-content: space-around;
-            
+
     }
-    
+
     .cabecalho__logo {
         width: 145px;
     }
@@ -49,9 +49,9 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     .item__icone--menu {
-        background-image: url(../../img/menu.svg);
+        background-image: url(/assets/img/menu.svg);
         border: none;
     }
 
@@ -67,7 +67,7 @@
     .cartao {
         display: flex;
         flex-direction: column;
-        
+
         /* align-items: center;         */
     }
 
@@ -75,11 +75,19 @@
         width: 704px;
         height: 366px;
         margin-top: 40px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 32px;
+        background: #6BD1FF;
     }
 
     .cartao__editor {
         width: 640px;
-        height: 302px;        
+        height: 302px;
+        box-sizing: border-box;
+        padding: 32px;
+        background: #141414;
+        border-radius: 8px;
     }
 
     .cartao__code {
@@ -94,21 +102,45 @@
 
     .visualizador {
         width: 704px;
+        height: 56px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        background: rgba(80, 129, 251, 0.08);
+        margin-top: 32px;
+        font-size: var(--tamanho-padrao);
+        color: var(--branco);
+        line-height: 24px;
+        transition: 0.3s;
+        border: none;
     }
-            
+
+    .visualizador:hover {
+        background: rgba(80, 129, 251, 0.16);
+    }
+
+    .visualizador:active {
+        background: rgba(80, 129, 251, 0.16);
+        outline: 4px solid rgba(80, 129, 251, 0.24);
+    }
+
+    .visualizador:focus {
+        background: rgba(80, 129, 251, 0.24)
+    }
+
+
     .projeto {
         display: flex;
         flex-direction: column;
-    }    
-    
-    .projeto__heading {
+    }
+
+    .projeto__lateral--titulo {
         font-size: var(--tamanho-subtitulo);
         line-height: 18px;
         letter-spacing: 6px;
         font-weight: 400;
         padding-bottom: 16px;
     }
-    
+
     .projeto__nome {
         background: rgba(255, 255, 255, 0.16);
         color: var(--branco);
@@ -122,12 +154,12 @@
         transition: 0.3s;
         border: none;
     }
-    
+
     .projeto__nome:hover {
         background: rgba(255, 255, 255, 0.24);
         mix-blend-mode: lighten;
     }
-    
+
     .projeto__descricao {
         background: rgba(255, 255, 255, 0.16);
         color: var(--branco);
@@ -145,21 +177,27 @@
         border: none;
         margin-bottom: 40px;
     }
-    
+
     .projeto__descricao:hover {
         background: rgba(255, 255, 255, 0.24);
         mix-blend-mode: lighten;
         cursor: pointer;
+    }
+
+    .projeto__personalizar--titulo{
+        font-size: 12px;
+        padding-bottom: 16px;
+        letter-spacing: 4px;
     }
     
     .projeto__linguagembotao {
         display: flex;
         flex-direction: row;
         /* padding-top: 40px; */
-    } 
+    }
 
 
-    
+
     .projeto__linguagens {
         background: rgba(255, 255, 255, 0.16);
         color: var(--branco);
@@ -175,11 +213,11 @@
         border: none;
         transition: 0.3s;
     }
-    
+
     .projeto__linguagens:hover {
         background: rgba(255, 255, 255, 0.24);
     }
-    
+
     .projeto__botao {
         display: block;
         width: 344px;
@@ -191,8 +229,8 @@
         border-color: #C4C4C4;
         margin-bottom: 40px;
     }
-    
-    
+
+
     .projeto__cor {
         background: #6BD1FF;
         width: 328px;
@@ -201,7 +239,7 @@
         border-radius: 4px;
         margin: 7px 5px 0 7px;
     }
-    
+
     .projeto__salvar {
         width: 704px;
         height: 56px;
@@ -212,17 +250,17 @@
         line-height: 24px;
         transition: 0.3s;
     }
-    
+
     .projeto__salvar:hover {
         background: rgba(123, 164, 252, 1);
     }
-    
+
     .projeto__salvar:active {
         background: rgba(123, 164, 252, 1);
         outline: 4px solid rgba(80, 129, 251, 0.72);
         transition: 0.3s;
     }
-    
+
     .projeto__salvar:focus {
         background: rgba(150, 185, 253, 1);
     }
@@ -245,7 +283,7 @@
     .menu-lateral--ativo {
         right: 0;
         transition: .25s;
-    } 
+    }
 
     .menu__linha {
         display: flex;
@@ -257,34 +295,36 @@
     }
 
     .menu__perfil {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 8px;
-    align-items: center;
-    justify-content: center;
-    width: 106px;
-    height:56px;    
-    color:var(--branco);
-    padding: 8px 32px;
-    grid-column: 3;
-    font-size: var(--tamanho-padrao);
-    line-height: 24px;
-    border-radius: 8px;
-    transition: 0.3s;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 106px;
+        height: 56px;
+        color: var(--branco);
+        padding: 8px 32px;
+        grid-column: 3;
+        font-size: var(--tamanho-padrao);
+        line-height: 24px;
+        border-radius: 8px;
+        transition: 0.3s;
     }
 
     .menu__perfil::before {
-    content: "";
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(../../img/Photo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../../img/Photo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
-    .cabecalho__perfil, .item__icone--lupa, .menu-heading {
+    .cabecalho__perfil,
+    .item__icone--lupa,
+    .menu-heading {
         display: none;
     }
 
