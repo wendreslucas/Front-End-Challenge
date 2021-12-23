@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 0 8px;
+}
+
+.cabecalho__logo {
+    width: 145px;
+}
+
+.cabecalho__interacao {
+    width: 96px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item__icone {
+    display: block;
+    margin-right: 1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: none;
+    background-color: var(--azulescuro);
+    background-size: 1.375rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item__icone--lupa {
+    background-image: url(/assets/img/pesquisa.svg);
+    border: none;
+}
+
+.item__icone--lupa:hover {
+    border-radius: 16px;
+    background-color: rgba(80, 129, 251, 0.08);
+}
+
+.item__icone--lupa:active {
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+.item__icone--menu {
+    background-image: url(/assets/img/menu.svg);
+    border: none;
+}
+
+.item__icone--menu:hover {
+    border-radius: 16px;
+    background-color: rgba(80, 129, 251, 0.08);
+}
+
+.item__icone--menu:active {
+    background-color: rgba(80, 129, 251, 0.16);
+}
