@@ -1,11 +1,13 @@
 @media screen and (min-width: 768px) {
-    body {
-        margin-left: 27px;
+
+    body:not(.cabecalho__principal) {
+        
     }
 
     .cabecalho__principal {
         width: 768x;
         height: 56px;
+        padding-top: 16px;
     }
 
     .container {
@@ -22,12 +24,12 @@
     .cabecalho__pesquisa {
         background: rgba(255, 255, 255, 0.16);
         color: var(--branco);
-        width: 431px;
+        width: 427px;
         height: 56px;
         border-radius: 8px;
         font-size: var(--tamanho-padrao);
         line-height: 24px;
-        padding-left: 16px;
+        
         border: none;
         transition: 0.3s;
     }
@@ -67,7 +69,7 @@
     .cartao {
         display: flex;
         flex-direction: column;
-
+        margin-left: 27px;
         /* align-items: center;         */
     }
 
@@ -79,6 +81,7 @@
         box-sizing: border-box;
         padding: 32px;
         background: #6BD1FF;
+        
     }
 
     .cartao__editor {
@@ -131,6 +134,7 @@
     .projeto {
         display: flex;
         flex-direction: column;
+        margin-left: 27px;
     }
 
     .projeto__lateral--titulo {
