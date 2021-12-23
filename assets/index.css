@@ -57,58 +57,9 @@
         background-position: center;
     }
 
-    .principal {
-        display: flex;
-        justify-content: space-between;
-        padding: 38px 32px 0 32px;
-        align-items: flex-start;
-    }
+  
 
-    .menu {
-        display: flex;
-        margin-right: 60px;
-    }
-
-    .menu__heading {
-        font-size: var(--tamanho-subtitulo);
-        line-height: 18px;
-        letter-spacing: 6px;
-        font-weight: 400;
-        padding-bottom: 16px;
-    }
-
-    .menu__item {
-        display: flex;
-        align-items: center;
-        padding-bottom: 16px;
-        cursor: pointer;
-        font-weight: 400;
-
-    }
-
-    .menu__item-titulo {
-        padding-left: 16px;
-        font-size: var(--tamanho-padrao);
-        line-height: 24px;
-    }
-
-    .menu__img-comunidade {
-        opacity: 0.5;
-        transition: 0.3s;
-    }
-
-    .menu__img-comunidade:hover {
-        opacity: 1;
-    }
-
-    .comunidade {
-        opacity: 0.5;
-        transition: 0.3s;
-    }
-
-    .comunidade:hover {
-        opacity: 1;
-    }
+    
 
 
     .visualizador {
