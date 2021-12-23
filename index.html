@@ -13,11 +13,8 @@
     <link href="assets/css/base/_reset.css" rel="stylesheet">
     <link href="assets/css/base/base.css" rel="stylesheet">
     <link href="assets/css/dracula.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/componente/editor.css" rel="stylesheet">
-    <link href="assets/css/index.css" rel="stylesheet">
     <link href="assets/css/index_mobile.css" rel="stylesheet">
-    <link href="assets/css/tablet_index.css" rel="stylesheet">
     <title>Challenge Alura</title>
 </head>
 
@@ -25,7 +22,8 @@
     <header class="cabecalho__principal">
         <div class="container">
             <a href="index.html"><img class="cabecalho__logo" src="assets/img/Logo.svg" alt="Logo Alura"></a>
-            <input class="cabecalho__pesquisa" type="text" placeholder="Busque por algo" aria-label="Busque por algo"></input>
+            <input class="cabecalho__pesquisa" type="text" placeholder="Busque por algo"
+                aria-label="Busque por algo"></input>
             <p class="cabecalho__perfil">Harry</p>
             <ul class="cabecalho__interacao">
                 <li class="interacao">
@@ -37,60 +35,59 @@
             </ul>
         </div>
     </header>
-    <div class="principal">
-        <main class="menu">
-            <div class="cartao">
-                <div class="cartao__conteudo">
-                    <div class="cartao__editor">
-                        <img src="assets/img/mac_buttons.svg" alt="Botões do Mac">
-                        <div class="cartao__code" contenteditable="true"></div>
-                    </div>
+    <nav class="menu"> <!--menu-lateral to menu-->
+        <ul class="menu__lista">
+            <h2 class="menu__heading">MENU</h2>
+            <li class="menu__item">
+                <a href="index.html">
+                    <img src="assets/img/icon_code.svg" alt="Link Editor de Código" class="menu__img">
+                </a>
+                <h4 class="menu__item-titulo">Editor de Código</h4>
+            </li>
+            <li class="menu__item">
+                <a href="code.html">
+                    <img src="assets/img/icon_users.svg" alt="Link Comunidade" class="menu__img-comunidade">
+                </a>
+                <h4 class="menu__item-titulo comunidade">Comunidade</h4>
+            </li>
+            <div class="menu__linha"></div>
+            <p class="menu__perfil">Harry</p>
+    </nav>
+    <main class="principal">
+        <section class="cartao">
+            <div class="cartao__conteudo">
+                <div class="cartao__editor">
+                    <img src="assets/img/mac_buttons.svg" alt="Botões do Mac">
+                    <div class="cartao__code" contenteditable="true"></div>
                 </div>
-                <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>
-                <nav class="menu-lateral ">
-                    <ul class="menu__lista">
-                        <h2 class="menu-heading">MENU</h2>
-                        <li class="menu__item">
-                            <a href="index.html">
-                                <img src="assets/img/icon_code.svg" alt="Link Editor de Código" class="menu__img">
-                            </a>
-                            <h4 class="menu__item-titulo">Editor de Código</h4>
-                        </li>
-                        <li class="menu__item">
-                            <a href="code.html">
-                                <img src="assets/img/icon_users.svg" alt="Link Comunidade" class="menu__img-comunidade">
-                            </a>
-                            <h4 class="menu__item-titulo comunidade">Comunidade</h4>
-                        </li>
-                        <div class="menu__linha"></div>
-                        <p class="menu__perfil">Harry</p>
-                </nav>
             </div>
-            <form id="projetoTeste" class="projeto">
-                <div id="projetoLateral" class="projeto__lateral">
-                    <h2 class="projeto__lateral--titulo">SEU PROJETO</h2>
-                    <input id="nomeProjeto" class="projeto__nome" name="nomeProjetoTeste" type="text"
-                        placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
-                    <textarea class="projeto__descricao" name="descricaoProjeto" type="text"
-                        placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto"></textarea>
-                </div>
-                <div class="projeto__personalizar">
-                    <h2 class="projeto__personalizar--titulo">PERSONALIZAÇÃO</h2>
-                    <div class="projeto__linguagembotao">
-                        <select class="projeto__linguagens">
-                            <option value="hide">Linguagem</option>
-                            <option value="Javascript">Javascript</option>
-                            <option value="C#">CSharp</option>
-                            <option value="Python">Python</option>
-                        </select>
-                        <div class="projeto__botao">
-                            <input class="projeto__cor" type="color"></input>
-                        </div>
+            <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>
+            
+        </div>
+        <form id="projetoTeste" class="projeto">
+            <div id="projetoLateral" class="projeto__lateral">
+                <h2 class="projeto__lateral--titulo">SEU PROJETO</h2>
+                <input id="nomeProjeto" class="projeto__nome" name="nomeProjetoTeste" type="text"
+                    placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
+                <textarea class="projeto__descricao" name="descricaoProjeto" type="text"
+                    placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto"></textarea>
+            </div>
+            <div class="projeto__personalizar">
+                <h2 class="projeto__personalizar--titulo">PERSONALIZAÇÃO</h2>
+                <div class="projeto__linguagembotao">
+                    <select class="projeto__linguagens">
+                        <option value="hide">Linguagem</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="C#">CSharp</option>
+                        <option value="Python">Python</option>
+                    </select>
+                    <div class="projeto__botao">
+                        <input class="projeto__cor" type="color"></input>
                     </div>
                 </div>
-                <button class="projeto__salvar">Salvar Projeto</button>
-            </form>
-    </div>
+            </div>
+            <button class="projeto__salvar">Salvar Projeto</button>
+        </form>
     </main>
     <script src="index.js"></script>
     <script src="code.js"></script>

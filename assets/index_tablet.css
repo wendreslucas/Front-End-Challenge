@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .cabecalho__principal {
         width: 768x;
@@ -130,7 +130,7 @@
     .projeto {
         display: flex;
         flex-direction: column;
-        margin-left: 27px;
+        
     }
 
     .projeto__lateral--titulo {
@@ -265,7 +265,7 @@
         background: rgba(150, 185, 253, 1);
     }
 
-    .menu-lateral {
+    .menu {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -280,7 +280,7 @@
         font-size: var(--tamanho-padrao);
     }
 
-    .menu-lateral--ativo {
+    .menu__lateral--ativo {
         right: 0;
         transition: .25s;
     }
@@ -324,7 +324,7 @@
 
     .cabecalho__perfil,
     .item__icone--lupa,
-    .menu-heading {
+    .menu__heading {
         display: none;
     }
 
