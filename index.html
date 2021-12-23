@@ -39,25 +39,27 @@
             </ul>
         </div>
     </header>
-    <nav class="menu"> <!--menu-lateral to menu-->
-        <ul class="menu__lista">
-            <h2 class="menu__heading">MENU</h2>
-            <li class="menu__item">
-                <a href="index.html">
-                    <img src="assets/img/icon_code.svg" alt="Link Editor de Código" class="menu__img">
-                </a>
-                <h4 class="menu__item-titulo">Editor de Código</h4>
-            </li>
-            <li class="menu__item">
-                <a href="code.html">
-                    <img src="assets/img/icon_users.svg" alt="Link Comunidade" class="menu__img-comunidade">
-                </a>
-                <h4 class="menu__item-titulo comunidade">Comunidade</h4>
-            </li>
-            <div class="menu__linha"></div>
-            <p class="menu__perfil">Harry</p>
-    </nav>
     <main class="principal">
+        <nav class="menu"> <!--menu-lateral to menu-->
+            <ul class="menu__lista">
+                <h2 class="menu__heading">MENU</h2>
+                <li class="menu__item">
+                    <a href="index.html">
+                        <img src="assets/img/icon_code.svg" alt="Link Editor de Código" class="menu__img">
+                    </a>
+                    <h4 class="menu__item-titulo">Editor de Código</h4>
+                </li>
+                <li class="menu__item">
+                    <a href="code.html">
+                        <img src="assets/img/icon_users.svg" alt="Link Comunidade" class="menu__img-comunidade">
+                    </a>
+                    <h4 class="menu__item-titulo comunidade">Comunidade</h4>
+                </li>
+                <div class="menu__linha"></div>
+                <p class="menu__perfil">Harry</p>
+            </ul>
+        </nav>
+    
         <section class="cartao">
             <div class="cartao__conteudo">
                 <div class="cartao__editor">
@@ -65,8 +67,7 @@
                     <div class="cartao__code" contenteditable="true"></div>
                 </div>
             </div>
-            <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>
-            
+            <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>            
         </div>
         <form id="projetoTeste" class="projeto">
             <div id="projetoLateral" class="projeto__lateral">
@@ -78,7 +79,7 @@
             </div>
             <div class="projeto__personalizar">
                 <h2 class="projeto__personalizar--titulo">PERSONALIZAÇÃO</h2>
-                <div class="projeto__linguagembotao">
+                <div class="projeto__linguagem--botao">
                     <select class="projeto__linguagens">
                         <option value="hide">Linguagem</option>
                         <option value="Javascript">Javascript</option>

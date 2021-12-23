@@ -68,7 +68,7 @@
 }
 
 @media screen and (min-width:1440px){
-    .menu {
+    .menu {        
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -82,8 +82,7 @@
         padding: 40px 24px 24px 24px;
         
         font-size: var(--tamanho-padrao);
-    }
-    
+    }   
 
     .menu__heading {
         font-size: var(--tamanho-subtitulo);
