@@ -1,9 +1,5 @@
 @media screen and (min-width: 768px) {
 
-    body:not(.cabecalho__principal) {
-        
-    }
-
     .cabecalho__principal {
         width: 768x;
         height: 56px;
@@ -29,7 +25,7 @@
         border-radius: 8px;
         font-size: var(--tamanho-padrao);
         line-height: 24px;
-        
+
         border: none;
         transition: 0.3s;
     }
@@ -81,7 +77,7 @@
         box-sizing: border-box;
         padding: 32px;
         background: #6BD1FF;
-        
+
     }
 
     .cartao__editor {
@@ -127,7 +123,7 @@
     }
 
     .visualizador:focus {
-        background: rgba(80, 129, 251, 0.24)
+        background: rgba(80, 129, 251, 0.24);
     }
 
 
@@ -148,7 +144,7 @@
     .projeto__nome {
         background: rgba(255, 255, 255, 0.16);
         color: var(--branco);
-        width: 704px;
+        width: 688px;
         height: 56px;
         border-radius: 8px;
         mix-blend-mode: lighten;
@@ -168,7 +164,7 @@
         background: rgba(255, 255, 255, 0.16);
         color: var(--branco);
         mix-blend-mode: lighten;
-        width: 704px;
+        width: 688px;
         height: 80px;
         border-radius: 8px;
         vertical-align: top;
@@ -188,12 +184,12 @@
         cursor: pointer;
     }
 
-    .projeto__personalizar--titulo{
+    .projeto__personalizar--titulo {
         font-size: 12px;
         padding-bottom: 16px;
         letter-spacing: 4px;
     }
-    
+
     .projeto__linguagembotao {
         display: flex;
         flex-direction: row;
