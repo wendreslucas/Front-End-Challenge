@@ -39,7 +39,7 @@
             </ul>
         </div>
     </header>
-    <main class="principal">
+    <!-- <main class="principal">  -->
         <nav class="menu"> <!--menu-lateral to menu-->
             <ul class="menu__lista">
                 <h2 class="menu__heading">MENU</h2>
@@ -58,8 +58,7 @@
                 <div class="menu__linha"></div>
                 <p class="menu__perfil">Harry</p>
             </ul>
-        </nav>
-    
+        </nav>    
         <section class="cartao">
             <div class="cartao__conteudo">
                 <div class="cartao__editor">
@@ -68,15 +67,15 @@
                 </div>
             </div>
             <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>            
-        </div>
-        <form id="projetoTeste" class="projeto">
+        </div>      
+        <aside id="projetoTeste" class="projeto">
             <div id="projetoLateral" class="projeto__lateral">
                 <h2 class="projeto__lateral--titulo">SEU PROJETO</h2>
                 <input id="nomeProjeto" class="projeto__nome" name="nomeProjetoTeste" type="text"
                     placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
                 <textarea class="projeto__descricao" name="descricaoProjeto" type="text"
                     placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto"></textarea>
-            </div>
+            </div>                   
             <div class="projeto__personalizar">
                 <h2 class="projeto__personalizar--titulo">PERSONALIZAÇÃO</h2>
                 <div class="projeto__linguagem--botao">
@@ -90,10 +89,14 @@
                         <input class="projeto__cor" type="color"></input>
                     </div>
                 </div>
-            </div>
-            <button class="projeto__salvar">Salvar Projeto</button>
-        </form>
-    </main>
+                <button class="projeto__salvar">Salvar Projeto</button>
+            </div>    
+            
+        </aside> 
+        </section>
+        
+       
+    <!-- </main>  -->
     <script src="index.js"></script>
     <script src="code.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
