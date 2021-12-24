@@ -122,19 +122,9 @@
 }
 
 @media screen and (min-width: 1440px){
-    /* .principal{
-        /* display: flex;
-        flex-direction: row; 
+       .cartao{
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 50% 50%;
-    /* } */
-
-    .cartao{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-            
-        
+        grid-template-columns: 25% 25% 25% 25%;                   
     } 
     
     .cartao__conteudo {
