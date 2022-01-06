@@ -47,13 +47,14 @@
                     <a href="index.html">
                         <img src="assets/img/icon_code.svg" alt="Link Editor de Código" class="menu__img">
                     </a>
-                    <h4 class="menu__item__editor">Editor de Código</h4>
+                        <h4 class="menu__item--editor">Editor de Código</h4>
                 </li>
                 <li class="menu__item">
-                    <a href="code.html">
+                    <a href="comunidade.html">
                         <img src="assets/img/icon_users.svg" alt="Link Comunidade" class="menu__img-comunidade">
                     </a>
-                    <h4 class="menu__item-titulo comunidade">Comunidade</h4>
+                        <h4 class="menu__item--comunidade">Comunidade</h4>
+                   
                 </li>
                 <div class="menu__linha"></div>
                 <p class="menu__perfil">Harry</p>
@@ -61,12 +62,18 @@
         </nav>    
         <section class="cartao">
             <div class="cartao__conteudo">
-                <div class="cartao__editor">
+                <div class="cartao__editor"  >
                     <img src="assets/img/mac_buttons.svg" alt="Botões do Mac">
-                    <div class="cartao__code" contenteditable="true"></div>
+                    <div class="cartao__code" contenteditable="true" data-div-code></div>
                 </div>
             </div>
-            <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>            
+            <button class="visualizador" name="Visualizar com o highlight">Visualizar com o highlight</button>  
+            <ul class="teste" data-list> 
+                <!-- <li class="teste_lista" data-task>
+
+                </li> -->
+            </ul>
+            
         </div>      
         <aside id="projetoTeste" class="projeto">
             <div id="projetoLateral" class="projeto__lateral">
@@ -89,15 +96,18 @@
                         <input class="projeto__cor" type="color"></input>
                     </div>
                 </div>
-                <button class="projeto__salvar">Salvar Projeto</button>
+                <button class="projeto__salvar" data-save-button>Salvar Projeto</button>
             </div>    
             
         </aside> 
         </section>  
        
     
-    <script src="index.js"></script>
-    <script src="code.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="services/botaoMenu.js"></script>
+    <script type="module" src="services/mudaCor.js"></script>
+    <script type="module" src="services/criaCodigo.js"></script>
+    <script type="module" src="services/carregaCodigo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>
 

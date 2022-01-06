@@ -10,13 +10,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/base/_reset.css" rel="stylesheet">
     <link href="assets/css/base/base.css" rel="stylesheet">
     <link href="assets/css/dracula.css" rel="stylesheet">
+    <link href="assets/css/componente/editor.css" rel="stylesheet">
+    <link href="assets/css/cabecalho.css" rel="stylesheet">
+    <link href="assets/css/conteudo_principal.css" rel="stylesheet">
+    <link href="assets/css/menu.css" rel="stylesheet">
+    <link href="assets/css/projeto__info.css" rel="stylesheet">
+    <link href="assets/css/comunidade.css" rel="stylesheet">
 
-    <link href="assets/css/code.css" rel="stylesheet">
 
-    
     <title>Comunidade Alura</title>
 </head>
 
@@ -37,30 +41,30 @@
         <main class="menu">
             <nav class="menu-lateral">
                 <ul class="menu__lista">
-                    <h2 class="menu-heading">MENU</h2>
+                    <h2 class="menu__heading">MENU</h2>
                     <li class="menu__item">
                         <a href="index.html">
                             <img src="assets/img/icon_code.svg" alt="Link Editor de Código" class="menu__img">
                         </a>
-                        <h4 class="menu__item-titulo">Editor de Código</h4>
+                        <h4 class="menu__item--editor">Editor de Código</h4>
                     </li>
                     <li class="menu__item">
-                        <a href="code.html">
+                        <a href="comunidade.html">
                             <img src="assets/img/icon_users.svg" alt="Link Comunidade" class="menu__img-comunidade">
                         </a>
-                        <h4 class="menu__item-titulo comunidade">Comunidade</h4>
+                        <h4 class="menu__item--comunidade">Comunidade</h4>
                     </li>
             </nav>
             <section class="codigos">
 
-                <div class="conteudo">
-                    <div class="conteudo__principal">
-                        <div class="conteudo__editor">
+                <div class="conteudo" data-conteudo>
+                    <!-- <div class="conteudo__principal" data-principal>
+                        <div class="conteudo__editor" data-editor>
                             <img src="assets/img/mac_buttons.svg" alt="Botões do Mac">
-                            <div class="editor__code" contenteditable="true"></div>
+                            <div class="editor__code" contenteditable="true" data-div-code></div>
                         </div>
-                    </div>
-                    <div class="informacoes">
+                    </div> -->
+                    <!-- <div class="informacoes">
                         <h3 class="informacoes__projeto-titulo">Título do projeto</h3>
                         <p class="informacoes__projeto-descricao">Essa é a descrição do meu projeto</p>
                         <div class="interacao">
@@ -79,7 +83,10 @@
             </section>
         </main>
     </div>
-    <script src="code.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="services/botaoMenu.js"></script>
+    <script type="module" src="services/mudaCor.js"></script>
+    <script type="module" src="services/criaCodigo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>
 

@@ -104,7 +104,7 @@
 
 
 .projeto__cor {
-    background: #6BD1FF;
+    background: #00000000;
     width: 87vw;
     max-width:600px;
     height: 40px;
@@ -257,7 +257,7 @@
 
 
     .projeto__cor {
-        background: #6BD1FF;
+        background: #00000000;
         width: 328px;
         height: 40px;
         top: 468px;
@@ -426,7 +426,7 @@
 
 
     .projeto__cor {
-        background: #6BD1FF;
+        background: #00000000;
         width: 256px;
         height: 40px;
         top: 468px;
@@ -443,6 +443,7 @@
         color: #051D3B;
         line-height: 24px;
         transition: 0.3s;
+        cursor: pointer;
     }
 
     .projeto__salvar:hover {
